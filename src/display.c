@@ -7,8 +7,14 @@
 
 #include "setting_up.h"
 
-void display(char **tab)
+void display(char **tab, int flag)
 {
-    for (int i = 1; tab[i] != NULL; i++)
+    int i = 0;
+
+    if (flag == 0)
+        i = 1;
+    while (tab[i] != NULL) {
         my_putstr(tab[i]);
+        i++;
+    }
 }

@@ -10,6 +10,7 @@ SRC = 	main.c 					\
 		src/error.c				\
 		src/display.c			\
 		src/find_max.c			\
+		src/generator.c			\
 		src/setting_up.c		\
 		src/gen_setting_up.c	\
 		src/reverse_demineur.c	\

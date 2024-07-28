@@ -53,14 +53,18 @@ static int *put_reverse(char *str)
     return line;
 }
 
-int **reverse_demineur(char **tab)
+int **reverse_demineur(char **tab, int flag)
 {
     int **reverse = malloc((len_tab(tab) + 1) * sizeof(int *));
     int ind_reverse = 0;
+    int i = 0;
 
-    for (int i = 1; tab[i] != NULL; i++) {
+    if (flag == 0)
+        i = 1;
+    while (tab[i] != NULL) {
         reverse[ind_reverse] = put_reverse(tab[i]);
         ind_reverse++;
+        i++;
     }
     reverse[ind_reverse] = NULL;
     return reverse;

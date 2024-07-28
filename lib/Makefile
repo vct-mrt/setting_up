@@ -12,6 +12,7 @@ SRC = my_strlen.c	\
 	my_strdup.c		\
 	len_tab.c		\
 	my_putstr.c		\
+	my_getnbr.c		\
 
 OBJ = $(SRC:.c=.o)
 

@@ -12,12 +12,12 @@ int setting_up(int ac, char **av)
 {
     char *buffer = openfile(av[1]);
     char **tab = put_tab(buffer, '\n');
-    int **reverse = reverse_demineur(tab);
+    int **reverse = reverse_demineur(tab, 0);
     int **add = adder_tab(reverse);
     int *ind_max = find_max(add);
 
     put_x(tab, ind_max);
-    display(tab);
+    display(tab, 0);
     free(ind_max);
     free(buffer);
     free_char_tab(tab);

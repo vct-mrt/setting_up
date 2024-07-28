@@ -13,14 +13,14 @@
     #include <sys/stat.h>
     #include <stdlib.h>
 
-int my_strlen(char *str);
-char *openfile(char *filepath);
-char **put_tab(char *str, char separator);
-char *my_strdup(char *str);
 int len_tab(char **tab);
-void free_char_tab(char **tab);
-void free_int_tab(int **tab);
+int my_getnbr(char *str);
+int my_strlen(char *str);
 void my_putstr(char *str);
-
+char *my_strdup(char *str);
+void free_int_tab(int **tab);
+char *openfile(char *filepath);
+void free_char_tab(char **tab);
+char **put_tab(char *str, char separator);
 
 #endif /* MY_LIB_H */
