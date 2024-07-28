@@ -25,8 +25,7 @@ int *find_max(int **tab)
     ind[0] = -1;
     ind[1] = -1;
     ind[2] = -1;
-    for (int i = 0; tab[i] != NULL; i++) {
+    for (int i = 0; tab[i] != NULL; i++)
         put_max(tab[i], i, ind);
-    }
     return ind;
 }

@@ -9,8 +9,10 @@
 
 int main(int ac, char **av)
 {
-    if (error(ac, av) == 84)
-        return 84;
-    else
+    if (ac == 2 && error(ac, av) != 84)
         return setting_up(ac, av);
+    else if (ac == 3 && error(ac, av) != 84)
+        return gen_setting_up(ac, av);
+    else
+        return 84;
 }
